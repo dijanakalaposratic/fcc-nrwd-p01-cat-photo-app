@@ -33,11 +33,14 @@
                     <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
                 </figure>
             </section>
-            
+
             <section>
                 <h2>Cat Form</h2>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
 
+                    <label><input name="indoor-outdoor" type="radio" id="indoor">indoor</label>
+                    <label><input name="indoor-outdoor" type="radio" id="outdoor">outdoor</label>
+                    <!-- the name attribute with the same name in both radio buttons automatically deselects the other -->
                     <input type="text" name="catphotourl" placeholder="cat photo URL" required>
                     <!-- name attribute names the submitted text -->
                 </form>
