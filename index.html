@@ -37,12 +37,19 @@
             <section>
                 <h2>Cat Form</h2>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
-
-                    <label><input name="indoor-outdoor" type="radio" id="indoor">indoor</label>
-                    <label><input name="indoor-outdoor" type="radio" id="outdoor">outdoor</label>
-                    <!-- the name attribute with the same name in both radio buttons automatically deselects the other -->
-                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-                    <!-- name attribute names the submitted text -->
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <label><input value="indoor" name="indoor-outdoor" type="radio" id="indoor">indoor</label>
+                        <label><input value="outdoor" name="indoor-outdoor" type="radio" id="outdoor">outdoor</label>
+                         <!-- the name attribute with the same name in both radio buttons automatically deselects the other -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                            <input type="checkbox" id="loving" name="personality" value="loving"> <label for="loving">loving</label>
+                            <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy">lazy</label>
+                    </fieldset>
+                        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                        <!-- name attribute names the submitted text -->
                 </form>
                 <button type="submit">Submit</button>
             </section>
